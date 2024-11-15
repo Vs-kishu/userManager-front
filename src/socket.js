@@ -2,7 +2,7 @@ import { io } from "socket.io-client";
 
 const userId = JSON.parse(localStorage.getItem("userToken"))?.userId;
 
-const socket = io("https://user-management-flax-three.vercel.app", {
+const socket = io("https://user-manager-ngqf.onrender.com", {
   query: { userId: userId },
  transports: ["polling", "websocket"], // Force WebSocket transport
   reconnectionAttempts: 5,   // Try to reconnect 5 times

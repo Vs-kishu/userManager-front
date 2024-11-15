@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://user-management-flax-three.vercel.app/api";
+const API_URL = "https://user-manager-ngqf.onrender.com/api";
 
 // Auth API
 export const register = (userData) =>
