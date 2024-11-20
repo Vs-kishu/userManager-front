@@ -1,14 +1,17 @@
-import Login from "../components/Login";
-import AdminDashboard from "../components/AdminDashboard";
-import PlayerDashboard from "../components/PlayerDashboard";
-import Navbar from "../components/Navbar";
+import Login from "./components/Login";
+import AdminDashboard from "./components/AdminDashboard";
+import PlayerDashboard from "./components/PlayerDashboard";
+import Navbar from "./components/Navbar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 function App() {
 
   const user=JSON.parse(localStorage.getItem("userToken"));
   return (
-    <div className="App">
+    <div className=" ">
       <Navbar user={user}/>
       {!user ? (
         <Login />
@@ -17,6 +20,9 @@ function App() {
       ) : (
         <PlayerDashboard user={user} />
       )}
+
+<ToastContainer />
+
     </div>
   );
 }
