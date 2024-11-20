@@ -21,7 +21,7 @@ function App() {
         <PlayerDashboard user={user} />
       )}
 
-<ToastContainer />
+<ToastContainer position="top-center" />
 
     </div>
   );

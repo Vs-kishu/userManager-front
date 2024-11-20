@@ -75,6 +75,9 @@ function PlayerDashboard({ user }) {
           src="/banana.png"
           alt="banana"
         />
+        <p className="mt-4 text-lg text-center text-green-600 font-semibold">
+      Don’t just stare at it, give it a click! 🍌 Who knows, bananas might just be magical!
+    </p>
       </div>
 
       {/* Rank Page */}
